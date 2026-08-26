@@ -37,6 +37,5 @@ export ANDROID_HOME=/usr/lib/android-sdk
 ./gradlew assembleDebug
 ```
 
-产物位于 `app/build/outputs/apk/debug/app-debug.apk`。
 
 © 夕兮 / SKYRAIN  ·  渠道 QQ：792413184
