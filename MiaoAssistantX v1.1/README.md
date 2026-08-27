@@ -38,6 +38,24 @@
 - 修复了部分反复消耗token的恶性bug
 - 对开屏通告进行了规范
 
+本程序包含以下第三方组件，其版权与许可能分别归属：
+
+1) llama.cpp / ggml
+   - 用途：本地 GGUF 大模型推理引擎
+   - 来源：https://github.com/ggerganov/llama.cpp
+   - 许可证：MIT License
+   - 本项目以预编译二进制（随附 native 库）方式使用，并通过
+     app/src/main/cpp/llm_jni.cpp 桥接调用。
+   - MIT 许可证文本可在上述官方仓库获取，或向本项目维护者索取。
+
+2) 预编译 native 动态库
+   - app/src/main/jniLibs/arm64-v8a/libllm_jni.so
+   - app/src/main/jniLibs/arm64-v8a/libllm_auxval.so
+   - app/src/main/jniLibs/arm64-v8a/libc++_shared.so
+   - 其中 libllm_jni.so 由本项目 cpp/llm_jni.cpp 与上述 llama.cpp
+     组件共同编译产生，整体按 AGPLv3 与 MIT 组合约定分发；
+     libllm_auxval.so / libc++_shared.so 为工具链/运行时库。
+
 注：特此感谢「QQ喵喵助手」原作者 QiCaiJie114514，以及上游仓库 Duckling520-QWQ（https://github.com/Duckling520-QWQ/QQMiaoAssistant）提供的源代码。
 本二改版官方仓库：https://github.com/SKYRAIN-404/QQMiaoAssistantX
 
