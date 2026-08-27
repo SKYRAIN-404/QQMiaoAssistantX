@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">喵喵助手·夕兮二改版</string>
+    <string name="channel_name">保活服务</string>
+    <string name="channel_desc">保持后台服务运行的通知渠道</string>
+    <string name="notif_title">喵喵助手·夕兮二改版正在守护</string>
+    <string name="notif_text">无障碍与本地AI改写已就绪</string>
+    <string name="accessibility_description">用于自动改写聊天输入，仅作用于用户启用列表中的应用输入框</string>
+</resources>
